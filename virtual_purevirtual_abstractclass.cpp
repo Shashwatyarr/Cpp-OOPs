@@ -24,7 +24,7 @@ class Piano:public Instrument{
 };
 
 int main(){
-    Instrument* i=new Accordion();
+    Instrument* i=new Accordion();//because we cannot create instances of abstract classes buyt we can create pointers of abstract classes
     Instrument* i2=new Piano();
 
     Instrument* instruments[]={new Accordion(),new Piano()};
