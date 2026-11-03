@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+
 struct YoutubeChannel{
     string name;
     int subscriberCount;
@@ -21,7 +22,6 @@ ostream& operator << (ostream& cout_kro,const YoutubeChannel& yt){
     return cout_kro;
 }
 
-
 struct Collection{
     vector<YoutubeChannel> mychannels;
     void operator += (const YoutubeChannel& yt){
@@ -34,6 +34,7 @@ struct Collection{
         );
     }
 };
+
 ostream& operator << (ostream& os, const Collection& collection){
     for (const auto& yt : collection.mychannels){
         os << yt << endl;
